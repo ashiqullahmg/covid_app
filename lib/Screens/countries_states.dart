@@ -9,7 +9,8 @@ import 'all_countries.dart';
 
 class CountriesStates extends StatefulWidget {
   final String? name;
-  CountriesStates({this.name});
+  final String? flag;
+  CountriesStates({this.name, this.flag});
 
   @override
   _CountriesStatesState createState() => _CountriesStatesState();
@@ -44,6 +45,10 @@ class _CountriesStatesState extends State<CountriesStates> {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
+          Image(image: NetworkImage(widget.flag.toString())),
+          SizedBox(
+            height: 10.0,
+          ),
           Text(widget.name.toString() + ' Cases'),
           SizedBox(
             height: 30,

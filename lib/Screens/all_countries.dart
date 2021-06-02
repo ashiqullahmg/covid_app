@@ -58,17 +58,18 @@ class _CountriesListState extends State<CountriesList> {
               child: ListView.builder(
                   itemCount: countriesList.length,
                   itemBuilder: (context, index) {
-                    var data = countriesList[index];
-
                     return InkWell(
                       onTap: () {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => CountriesStates(
-                                    name: countriesList[index]
-                                        .country
-                                        .toString())));
+                              builder: (context) => CountriesStates(
+                                  name: countriesList[index].country.toString(),
+                                  flag: countriesList[index]
+                                      .countryInfo!
+                                      .flag
+                                      .toString()),
+                            ));
                       },
                       child: Padding(
                         padding: const EdgeInsets.only(left: 10, right: 10),
