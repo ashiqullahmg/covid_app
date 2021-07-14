@@ -54,7 +54,7 @@ class _WorldStatesState extends State<WorldStates> {
                           data: snapshot.data?.deaths.toString()),
                       MyColumn(
                           title: 'Active Cases',
-                          data: snapshot.data?.deaths.toString()),
+                          data: snapshot.data?.active.toString()),
                       MyColumn(
                           title: 'Recovered',
                           data: snapshot.data?.recovered.toString()),

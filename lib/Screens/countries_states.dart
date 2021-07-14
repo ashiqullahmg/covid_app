@@ -67,7 +67,7 @@ class _CountriesStatesState extends State<CountriesStates> {
                           data: snapshot.data?.deaths.toString()),
                       MyColumn(
                           title: 'Active Cases',
-                          data: snapshot.data?.deaths.toString()),
+                          data: snapshot.data?.active.toString()),
                       MyColumn(
                           title: 'Recovered',
                           data: snapshot.data?.recovered.toString()),
@@ -91,8 +91,7 @@ class _CountriesStatesState extends State<CountriesStates> {
               color: Colors.green,
               child: Text('Go Back'),
               onPressed: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => CountriesList()));
+                Navigator.pop(context);
               },
             ),
           ),
