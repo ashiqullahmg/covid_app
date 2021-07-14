@@ -9,7 +9,7 @@ A new Flutter project.
 <img src="preview2.png" width="300" height="533">
 
 ### Third Screen
-<img src="preview23.png" width="300" height="533">
+<img src="preview3.png" width="300" height="533">
 
 ## Getting Started
 
